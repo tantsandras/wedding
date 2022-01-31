@@ -1,5 +1,6 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .header {
@@ -7,10 +8,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: block;
   width: 800px;
   position: relative;
   height: calc(800px * 1080 / 1920);
+  overflow-x: hidden;
 }
 
 .main {
