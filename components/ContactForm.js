@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from "./Form.module.css";
 
-export default () => {
+const ContactForm = () => {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
@@ -121,3 +121,5 @@ export default () => {
     </div>
   );
 };
+
+export default ContactForm;
