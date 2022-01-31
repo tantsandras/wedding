@@ -36,11 +36,7 @@ const Home: NextPage = () => {
             <p>Klädkod: blabla</p> <br />
           </div>
           <div className={styles.imageCard}>
-            <Image
-              src="/Untitled design(12).png"
-              alt="Gröna löv"
-              layout="fill"
-            />
+            <Image src="/datum.png" alt="Gröna löv" layout="fill" />
             <h2>Datum</h2>
             <p>14 / 05 / 2022</p>
           </div>
