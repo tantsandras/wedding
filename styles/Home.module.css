@@ -8,9 +8,9 @@
   justify-content: center;
   align-items: center;
   display: block;
-  width: 100vw;
+  width: 800px;
   position: relative;
-  min-height: 400px;
+  height: calc(800px * 1080 / 1920);
 }
 
 .main {
@@ -134,5 +134,9 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .header {
+    width: 90vw;
+    height: calc(90vw * 1080 / 1920);
   }
 }

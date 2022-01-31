@@ -19,7 +19,6 @@ const Home: NextPage = () => {
             src="/Robin + linnea(1).png"
             alt="Texten Robin och Linnea"
             layout="fill"
-            objectFit="contain"
             priority
           />
         </div>
