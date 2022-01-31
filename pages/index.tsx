@@ -20,7 +20,7 @@ const Home: NextPage = () => {
             alt="Texten Robin och Linnea"
             layout="fill"
             objectFit="contain"
-            loading="eager"
+            priority
           />
         </div>
         <div className={styles.grid}>
