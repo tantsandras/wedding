@@ -90,6 +90,30 @@ const ContactForm = () => {
           required
           value={inputs.name}
           className={styles.input}
+          placeholder="ex Hjalmar Borgert, Thea Fridh, Sonja Fridh"
+          multiple
+        />
+        <label htmlFor="svar_1" className={styles.label}>
+          Kan komma
+        </label>
+
+        <input
+          type="checkbox"
+          id="svar_1"
+          name="svar_ja"
+          value="ja"
+          className={styles.checkbox}
+        />
+
+        <label htmlFor="svar_2" className={styles.label}>
+          Kan inte komma
+        </label>
+        <input
+          type="checkbox"
+          id="svar_2"
+          name="svar_nej"
+          value="nej"
+          className={styles.checkbox}
         />
         <label htmlFor="message" className={styles.label}>
           Kostpreferenser
@@ -109,7 +133,7 @@ const ContactForm = () => {
         >
           {!status.submitting
             ? !status.submitted
-              ? "Submit"
+              ? "Skicka"
               : "Submitted"
             : "Submitting..."}
         </button>

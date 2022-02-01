@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Robin + Linnéa</title>
+        <title>Robin & Linnéa</title>
         <meta name="description" content="Robin och Linnéas brollop" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.header}>
           <Image
-            src="/Robin + linnea(1).png"
+            src="/robinochLinnea(4).png"
             alt="Texten Robin och Linnea"
             layout="fill"
             priority
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
       <footer className={styles.footer}>
         <span className={styles.logo}>
           <Image
-            src="/R ve(1).png"
+            src="/R ve(2).png"
             alt="14 Maj, R+L"
             width={300}
             height={300}
