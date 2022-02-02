@@ -25,6 +25,7 @@
 .footer {
   display: flex;
   flex: 1;
+  margin: 0 2rem;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
@@ -82,12 +83,12 @@
 .card h2 {
   padding-top: 2rem;
   margin: 0 0 2rem 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .card p {
   padding-top: 1rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
   border-top: 1px solid #ffffff;
 }
@@ -111,7 +112,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .imageCard p {
@@ -120,13 +121,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .logo {
   height: 1em;
-  margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {

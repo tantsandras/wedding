@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.header}>
           <Image
-            src="/robinochLinnea(4).png"
+            src="/robinochLinnea(6).png"
             alt="Texten Robin och Linnea"
             layout="fill"
             priority

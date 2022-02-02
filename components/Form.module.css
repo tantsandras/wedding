@@ -1,5 +1,6 @@
 .title {
   padding-top: 2rem;
+  font-size: 1.25rem;
 }
 
 .form {
@@ -11,13 +12,14 @@
 
 .label {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding-top: 1rem;
   border-top: 1px solid #ffffff;
 }
 
 .input {
   border: 1px solid #eaeaea;
+  background-color: #ffffff;
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -31,34 +33,8 @@
   outline-offset: 2px;
 }
 
-.checkbox {
-  -webkit-appearance: none;
-  background-color: #fff;
-  border: 1px solid rgb(3, 92, 92);
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  position: relative;
-  transition: 0.1s ease-in-out;
-}
-
-.checkbox:checked:after {
-  content: "\2714";
-  width: 25px;
-  height: 25px;
-  font-size: 18px;
-  position: absolute;
-  top: 0px;
-  left: 5px;
-  color: rgb(3, 92, 92);
-}
-
-.checkbox:hover {
-  border: 1px solid rgb(3, 92, 92);
-  outline: rgb(3, 92, 92) solid 2px;
-  outline-offset: 2px;
+.option {
+  background-color: #ffffff;
 }
 
 .myclass {

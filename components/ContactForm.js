@@ -4,25 +4,28 @@ import styles from "./Form.module.css";
 
 const ContactForm = () => {
   const [status, setStatus] = useState({
-    submitted: false,
-    submitting: false,
+    skickat: false,
+    skickas: false,
     info: { error: false, msg: null },
   });
   const [inputs, setInputs] = useState({
     email: "",
-    name: "",
-    message: "",
+    namn: "",
+    kan_komma: "",
+    kostpreferenser: "",
   });
   const handleServerResponse = (ok, msg) => {
     if (ok) {
       setStatus({
-        submitted: true,
-        submitting: false,
+        skickat: true,
+        skickas: false,
         info: { error: false, msg: msg },
       });
       setInputs({
         email: "",
-        message: "",
+        namn: "",
+        kan_komma: "",
+        kostpreferenser: "",
       });
     } else {
       setStatus({
@@ -37,33 +40,32 @@ const ContactForm = () => {
       [e.target.id]: e.target.value,
     }));
     setStatus({
-      submitted: false,
-      submitting: false,
+      skickat: false,
+      skickas: false,
       info: { error: false, msg: null },
     });
+    console.log(inputs);
   };
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
+    setStatus((prevStatus) => ({ ...prevStatus, skickas: true }));
     axios({
       method: "POST",
       url: "https://formspree.io/f/xnqwpvqg",
       data: inputs,
     })
       .then((response) => {
-        handleServerResponse(
-          true,
-          "Thank you, your message has been submitted."
-        );
+        handleServerResponse(true, "Tack! Ditt svar har skickats.");
       })
       .catch((error) => {
         handleServerResponse(false, error.response.data.error);
       });
   };
+
   return (
     <div>
       <h2 className={styles.title}>RSVP</h2>
-      <form onSubmit={handleOnSubmit} className={styles.form}>
+      <form id="RSVP form" onSubmit={handleOnSubmit} className={styles.form}>
         <input type="text" name="text" className={styles.myclass} />
         <input type="hidden" name="_subject" value="RSVP från hemsidan" />
         <label htmlFor="email" className={styles.label}>
@@ -79,63 +81,57 @@ const ContactForm = () => {
           placeholder="ex hjalmar@gmail.com"
           className={styles.input}
         />
-        <label htmlFor="name" className={styles.label}>
+        <label htmlFor="namn" className={styles.label}>
           Namn
         </label>
         <input
-          id="name"
-          name="name"
+          id="namn"
+          name="namn"
           type="text"
           onChange={handleOnChange}
           required
-          value={inputs.name}
+          value={inputs.namn}
           className={styles.input}
           placeholder="ex Hjalmar Borgert, Thea Fridh, Sonja Fridh"
           multiple
         />
-        <label htmlFor="svar_1" className={styles.label}>
-          Kan komma
+        <label htmlFor="kan_komma" className={styles.label}>
+          Kan komma?
         </label>
-
-        <input
-          type="checkbox"
-          id="svar_1"
-          name="svar_ja"
-          value="ja"
-          className={styles.checkbox}
-        />
-
-        <label htmlFor="svar_2" className={styles.label}>
-          Kan inte komma
-        </label>
-        <input
-          type="checkbox"
-          id="svar_2"
-          name="svar_nej"
-          value="nej"
-          className={styles.checkbox}
-        />
-        <label htmlFor="message" className={styles.label}>
+        <select
+          id="kan_komma"
+          name="kan_komma"
+          type="select"
+          required
+          value={inputs.kan_komma}
+          form="RSVP form"
+          className={styles.input}
+          onChange={handleOnChange}
+        >
+          <option value="ja">Ja</option>
+          <option value="nej">Nej</option>
+        </select>
+        <label htmlFor="kostpreferenser" className={styles.label}>
           Kostpreferenser
         </label>
         <textarea
-          id="message"
-          name="message"
+          id="kostpreferenser"
+          name="kostpreferenser"
           placeholder="ex Hjalmar: vegetarian och/eller Tove: nötallergi"
           onChange={handleOnChange}
-          value={inputs.message}
+          value={inputs.kostpreferenser}
           className={styles.input}
         />
         <button
           type="submit"
-          disabled={status.submitting}
+          disabled={status.skickas}
           className={styles.button}
         >
-          {!status.submitting
-            ? !status.submitted
+          {!status.skickas
+            ? !status.skickat
               ? "Skicka"
-              : "Submitted"
-            : "Submitting..."}
+              : "Skickat"
+            : "Skickas..."}
         </button>
       </form>
       {status.info.error && (
