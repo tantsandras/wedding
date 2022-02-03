@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Robin & Linnéa</title>
         <meta name="description" content="Robin och Linnéas bröllop" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>
