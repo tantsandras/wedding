@@ -135,7 +135,7 @@
     flex-direction: column;
   }
   .header {
-    width: 90vw;
+    width: 100vw;
     height: calc(90vw * 1080 / 1920);
   }
 }

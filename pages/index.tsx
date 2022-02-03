@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Robin & Linnéa</title>
-        <meta name="description" content="Robin och Linnéas brollop" />
+        <meta name="description" content="Robin och Linnéas bröllop" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           <div className={styles.imageCard}>
             <Image
               src="/IMG_7353.jpg"
-              alt="Robin och Linnea tittar pa varandra pa en solig dag"
+              alt="Robin och Linnea tittar på varandra på en solig dag"
               layout="fill"
             />
           </div>
