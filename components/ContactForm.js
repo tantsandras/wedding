@@ -11,8 +11,9 @@ const ContactForm = () => {
   const [inputs, setInputs] = useState({
     email: "",
     namn: "",
-    kan_komma: "",
+    kan_komma: "ja",
     kostpreferenser: "",
+    önskelåt: "",
   });
   const handleServerResponse = (ok, msg) => {
     if (ok) {
@@ -26,6 +27,7 @@ const ContactForm = () => {
         namn: "",
         kan_komma: "",
         kostpreferenser: "",
+        onskelåt: "",
       });
     } else {
       setStatus({
@@ -96,7 +98,7 @@ const ContactForm = () => {
           multiple
         />
         <label htmlFor="kan_komma" className={styles.label}>
-          Kan komma?
+          Kan du komma?
         </label>
         <select
           id="kan_komma"
@@ -121,6 +123,18 @@ const ContactForm = () => {
           onChange={handleOnChange}
           value={inputs.kostpreferenser}
           className={styles.input}
+        />
+        <label htmlFor="önskelåt" className={styles.label}>
+          Önskelåt till dansgolvet
+        </label>
+        <input
+          id="önskelåt"
+          name="önskelåt"
+          type="text"
+          onChange={handleOnChange}
+          value={inputs.önskelåt}
+          className={styles.input}
+          placeholder="ex Rasputin - Boney M."
         />
         <button
           type="submit"

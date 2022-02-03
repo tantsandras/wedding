@@ -99,7 +99,7 @@
   position: relative;
   max-width: 300px;
   min-width: 300px;
-  min-height: 400px;
+  height: calc(300px * 2245 / 1587);
   text-align: center;
   color: black;
   text-decoration: none;

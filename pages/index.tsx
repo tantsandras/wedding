@@ -23,16 +23,26 @@ const Home: NextPage = () => {
           />
         </div>
         <div className={styles.grid}>
+          <div className={styles.imageCard}>
+            <Image
+              src="/IMG_7353.jpg"
+              alt="Robin och Linnea tittar pa varandra pa en solig dag"
+              layout="fill"
+            />
+          </div>
           <div className={styles.card}>
             <h2>Info</h2>
             <p>
-              Bröllop på: <a href="https://skansenkronan.se/">Skansen Kronan</a>{" "}
+              Plats: <a href="https://skansenkronan.se/">Skansen Kronan</a>{" "}
               <br />
               Leijonsparres Väg 10, 436 50 Göteborg
             </p>
             <br />
-            <p>Tid: blabla - blabla</p> <br />
-            <p>Klädkod: blabla</p> <br />
+            <p>
+              Tid: Vigsel klockan 15, med efterföljande middag och fest
+            </p>{" "}
+            <br />
+            <p>Klädkod: Kavaj</p> <br />
           </div>
           <div className={styles.imageCard}>
             <Image src="/datum.png" alt="Gröna löv" layout="fill" />
@@ -41,8 +51,22 @@ const Home: NextPage = () => {
           </div>
 
           <div className={styles.card}>
-            <h2>Annan info</h2>
-            <p>bllaablablabl ablablablbalbalbal balablabalba</p>
+            <h2>Bra att veta</h2>
+            <p>
+              Vigseln kommer att ske utomhus, men om det blir Göteborgsväder
+              flyttas den in i själva fästningen. Där kommer även middagen och
+              festen äga rum. <br /> <br />
+              Ingen blir gladare än vi om ni vill hålla tal. Kontakta i så fall
+              gärna våra eminenta toastmasters för kvällen: Ellinor Fridh och
+              Cristopher Grahl. De nås via: crgrahl@outlook.com.
+              <br /> <br />
+              Vi älskar era barn och om de vill får de gärna närvara vid
+              vigseln. På middagen och festen vill vi dock gärna ha er för oss
+              själva. <br />
+              <br />
+              Tveka inte att kontakta oss om ni har några frågor! Linnéa:
+              070-519 21 20, Robin: 070-850 45 73.
+            </p>
           </div>
 
           <div className={styles.card}>
