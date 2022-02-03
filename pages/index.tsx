@@ -31,9 +31,17 @@ const Home: NextPage = () => {
             />
           </div>
           <div className={styles.card}>
-            <h2>Info</h2>
+            <h2>Vi gifter oss!</h2>
             <p>
-              Plats: <a href="https://skansenkronan.se/">Skansen Kronan</a>{" "}
+              Plats:{" "}
+              <a
+                href="https://skansenkronan.se/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Gå till Skansen Kronans hemsida"
+              >
+                Skansen Kronan
+              </a>{" "}
               <br />
               Leijonsparres Väg 10, 436 50 Göteborg
             </p>
@@ -64,11 +72,12 @@ const Home: NextPage = () => {
               vigseln. På middagen och festen vill vi dock gärna ha er för oss
               själva. <br />
               <br />
-              Tveka inte att kontakta oss om ni har några frågor! Linnéa:
-              070-519 21 20, Robin: 070-850 45 73.
+              Tveka inte att kontakta oss om ni har några frågor!
+              <br />
+              Linnéa: 070-519 21 20 <br />
+              Robin: 070-850 45 73
             </p>
           </div>
-
           <div className={styles.card}>
             <ContactForm />
           </div>
@@ -76,14 +85,7 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        <span className={styles.logo}>
-          <Image
-            src="/R ve(2).png"
-            alt="14 Maj, R+L"
-            width={300}
-            height={300}
-          />
-        </span>
+        <Image src="/R ve(2).png" alt="14 Maj, R+L" width={300} height={300} />
       </footer>
     </div>
   );
