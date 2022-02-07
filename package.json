@@ -1,5 +1,6 @@
 {
-  "name": "wedding",
+  "name": "robin-linnea",
+  "background_color": "#fff",
   "private": true,
   "scripts": {
     "dev": "next dev",

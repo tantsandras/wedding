@@ -1,5 +1,6 @@
 .container {
   padding: 0;
+  overflow-x: hidden;
 }
 
 .header {
@@ -88,7 +89,7 @@
 }
 
 .formBox {
-  max-width: 454px;
+  max-width: 460px;
   display: inline-block;
   flex-grow: 1;
 }
