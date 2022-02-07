@@ -7,9 +7,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 800px;
+  width: min(800px, calc(80% + 100px));
   position: relative;
-  height: calc(800px * 756 / 1344);
+  height: min(calc(100vw * 756 / 1344), calc(800px * 756 / 1344));
 }
 
 .main {
@@ -87,6 +87,12 @@
   border-top: 1px solid #ffffff;
 }
 
+.formBox {
+  max-width: 454px;
+  display: inline-block;
+  flex-grow: 1;
+}
+
 .imageCard {
   margin: 1rem;
   padding: 1.5rem;
@@ -124,8 +130,8 @@
     width: 100%;
     flex-direction: column;
   }
-  .header {
+  /* .header {
     width: 100vw;
-    height: calc(100vw * 1080 / 1920);
-  }
+    height: calc(100vw * 756 / 1344);
+  } */
 }

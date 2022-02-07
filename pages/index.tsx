@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Robin & Linnéa</title>
         <meta name="description" content="Robin och Linnéas bröllop" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon3.png" />
       </Head>
 
       <main className={styles.main}>
@@ -78,14 +78,21 @@ const Home: NextPage = () => {
               Robin: 070-850 45 73
             </p>
           </div>
-          <div className={styles.card}>
-            <ContactForm />
+          <div className={styles.formBox}>
+            <div className={styles.card}>
+              <ContactForm />
+            </div>
           </div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <Image src="/R ve(2).png" alt="14 Maj, R+L" width={300} height={300} />
+        <Image
+          src="/R ve(2).png"
+          alt="14 Maj, R & L"
+          width={300}
+          height={300}
+        />
       </footer>
     </div>
   );
