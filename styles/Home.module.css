@@ -29,7 +29,7 @@
   top: 20%;
   left: 3rem;
   z-index: 2;
-  height: 0.03rem;
+  height: 1px;
   width: 51%;
   background: #232b2b;
   transform: scaleX(0);
@@ -42,7 +42,7 @@
   bottom: 10%;
   right: 3rem;
   z-index: 2;
-  height: 0.03rem;
+  height: 0.03em;
   width: 55%;
   background: #232b2b;
   transform: scaleX(0);
@@ -55,7 +55,7 @@
   flex: 1;
   margin: 0 9%;
   padding: 2rem 0;
-  border-top: 0.03rem solid #232b2b;
+  border-top: 1px solid #232b2b;
   justify-content: center;
   align-items: center;
 }
