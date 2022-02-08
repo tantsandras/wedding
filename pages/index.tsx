@@ -15,9 +15,12 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.header}>
+          <div className={styles.left}></div>
+          <h1 className={styles.title}>Robin och Linnéa</h1>
+          <div className={styles.right}></div>
           <Image
             src="/robinochLinnea(6).png"
-            alt="Texten Robin och Linnea"
+            aria-hidden="true"
             layout="fill"
             priority
           />
@@ -28,6 +31,7 @@ const Home: NextPage = () => {
               src="/IMG_7353.jpg"
               alt="Robin och Linnea tittar på varandra på en solig dag"
               layout="fill"
+              priority
             />
           </div>
           <div className={styles.card}>
@@ -53,7 +57,7 @@ const Home: NextPage = () => {
             <p>Klädkod: Kavaj</p> <br />
           </div>
           <div className={styles.imageCard}>
-            <Image src="/datum.png" alt="Gröna löv" layout="fill" />
+            <Image src="/datum.png" alt="Gröna löv" layout="fill" priority />
             <h2>Datum</h2>
             <p>14 / 05 / 2022</p>
           </div>
