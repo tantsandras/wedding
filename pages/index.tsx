@@ -102,4 +102,17 @@ const Home: NextPage = () => {
   );
 };
 
+<style jsx global>{`
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+`}</style>;
+
 export default Home;

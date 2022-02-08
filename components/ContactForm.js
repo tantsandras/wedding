@@ -66,7 +66,7 @@ const ContactForm = () => {
 
   return (
     <div>
-      <h2 className={styles.title}>RSVP</h2>
+      <h3 className={styles.title}>RSVP</h3>
       <form id="RSVP form" onSubmit={handleOnSubmit} className={styles.form}>
         <input type="text" name="text" className={styles.myclass} />
         <input type="hidden" name="_subject" value="RSVP från hemsidan" />
