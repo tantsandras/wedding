@@ -27,7 +27,7 @@ const ContactForm = () => {
         namn: "",
         kan_komma: "",
         kostpreferenser: "",
-        onskelåt: "",
+        önskelåt: "",
       });
     } else {
       setStatus({
