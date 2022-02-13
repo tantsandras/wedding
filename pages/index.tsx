@@ -15,9 +15,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.header}>
-          <div className={styles.left}></div>
           <h1 className={styles.title}>Robin och Linnéa</h1>
-          <div className={styles.right}></div>
           <Image
             src="/robinochLinnea(6).png"
             aria-hidden="true"
@@ -51,7 +49,8 @@ const Home: NextPage = () => {
             </p>
             <br />
             <p>
-              Tid: Vigsel klockan 15, med efterföljande middag och fest
+              Tid: Vigsel klockan 15, <br />
+              med efterföljande mingel, middag och fest
             </p>{" "}
             <br />
             <p>Klädkod: Kavaj</p> <br />
@@ -67,16 +66,30 @@ const Home: NextPage = () => {
             <p>
               Vigseln kommer att ske utomhus, men om det blir Göteborgsväder
               flyttas den in i själva fästningen. Där kommer även middagen och
-              festen äga rum. <br /> <br />
+              festen äga rum. I formuläret nedan får ni gärna skriva om ni har
+              någon allergi eller andra kostpreferenser. Skriv också om ni
+              föredrar alkoholfritt.
+              <br /> <br />
               Ingen blir gladare än vi om ni vill hålla tal. Kontakta i så fall
               gärna våra eminenta toastmasters för kvällen: Ellinor Fridh och
               Cristopher Grahl. De nås via: crgrahl@outlook.com.
               <br /> <br />
-              Vi älskar era barn och om de vill får de gärna närvara vid
-              vigseln. På middagen och festen vill vi dock gärna ha er för oss
-              själva. <br />
+              Vi älskar era barn, men den här dagen vill vi gärna ha er för oss
+              själva. Självklart är spädbarn undantagna.
               <br />
-              Tveka inte att kontakta oss om ni har några frågor!
+              <br />
+              Då vi redan bor tillsammans har vi det mesta ett hem behöver. Mest
+              av allt önskar vi oss er närvaro på vår dag, men om ni ändå skulle
+              vilja uppmärksamma oss på något mer sätt skulle vi bli glada för
+              ett bidrag till vår bröllopsresa!
+              <br />
+              <br />
+              Då det kommer närvara personer som är doftöverkänsliga ber vi er
+              lämna starka dofter hemma.
+              <br />
+              <br />
+              Tveka inte att kontakta oss om ni har några frågor eller
+              funderingar!
               <br />
               Linnéa: 070-519 21 20 <br />
               Robin: 070-850 45 73
